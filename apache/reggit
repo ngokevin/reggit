@@ -2,10 +2,9 @@
     ServerAdmin ngoke@onid.orst.edu
     ServerName  voodoo
     ServerAlias www.archer.dyndns-home.com
-    DocumentRoot /www/
     LogLevel warn
-    WSGIDaemonProcess ngoke processes=2 maximum-requests=500 threads=1
-    WSGIProcessGroup ngoke
+    WSGIDaemonProcess reggit processes=2 maximum-requests=500 threads=1
+    WSGIProcessGroup reggit
     WSGIScriptAlias / /www/reggit/apache/django.wsgi
     Alias /site_media /www/reggit/site_media
 </VirtualHost>
